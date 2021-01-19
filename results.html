@@ -109,27 +109,27 @@ stats"></a></div></noscript>
     }
 
     miner  = getQueryVariable("e")
-    teamer     = getQueryVariable("d")
+    soloist     = getQueryVariable("d")
     vanilla   = getQueryVariable("g")
-    strategist  = getQueryVariable("s")
-    fighter    = (100 - equality).toFixed(1)
-    soloist     = (100 - peace   ).toFixed(1)
-    modding = (100 - liberty ).toFixed(1)
-    duelist = (100 - progress).toFixed(1)
+    duelist  = getQueryVariable("s")
+    fighter    = (100 - miner).toFixed(1)
+    teamer     = (100 - soloist).toFixed(1)
+    modding = (100 - vanilla).toFixed(1)
+    strategist = (100 - duelist).toFixed(1)
 
     setBarValue("miner", miner)
     setBarValue("fighter", fighter)
-    setBarValue("teamer", teamer)
     setBarValue("soloist", soloist)
+    setBarValue("teamer", teamer)
     setBarValue("vanilla", vanilla)
     setBarValue("modding", modding)
-    setBarValue("strategist", strategist)
     setBarValue("duelist", duelist)
+    setBarValue("strategist", strategist)
 
     document.getElementById("economic-label").innerHTML = setLabel(miner, econArray)
-    document.getElementById("diplomatic-label").innerHTML = setLabel(teamer, diplArray)
+    document.getElementById("diplomatic-label").innerHTML = setLabel(soloist, diplArray)
     document.getElementById("state-label").innerHTML = setLabel(vanilla, govtArray)
-    document.getElementById("society-label").innerHTML = setLabel(strategist, sctyArray)
+    document.getElementById("society-label").innerHTML = setLabel(duelist, sctyArray)
 
     ideology = ""
     ideodist = Infinity
@@ -137,8 +137,8 @@ stats"></a></div></noscript>
         dist = 0
         dist += Math.pow(Math.abs(ideologies[i].stats.econ - miner), 2)
         dist += Math.pow(Math.abs(ideologies[i].stats.govt - vanilla), 2)
-        dist += Math.pow(Math.abs(ideologies[i].stats.dipl - teamer), 1.73856063)
-        dist += Math.pow(Math.abs(ideologies[i].stats.scty - strategist), 1.73856063)
+        dist += Math.pow(Math.abs(ideologies[i].stats.dipl - soloist), 1.73856063)
+        dist += Math.pow(Math.abs(ideologies[i].stats.scty - duelist), 1.73856063)
         if (dist < ideodist) {
             ideology = ideologies[i].name
             ideodist = dist
@@ -185,17 +185,17 @@ stats"></a></div></noscript>
         ctx.fillRect(120, 420, 560, 80)
         ctx.fillRect(120, 540, 560, 80)
         ctx.fillStyle="#f44336"
-        ctx.fillRect(120, 184, 5.6*fighter-2, 72)
+        ctx.fillRect(120, 184, 5.6*miner-2, 72)
         ctx.fillStyle="#00897b"
-        ctx.fillRect(682-5.6*miner, 184, 5.6*miner-2, 72)
+        ctx.fillRect(682-5.6*fighter, 184, 5.6*fighter-2, 72)
         ctx.fillStyle="#ff9800"
         ctx.fillRect(120, 304, 5.6*teamer-2, 72)
         ctx.fillStyle="#03a9f4"
         ctx.fillRect(682-5.6*soloist, 304, 5.6*soloist-2, 72)
         ctx.fillStyle="#ffeb3b"
-        ctx.fillRect(120, 424, 5.6*modding-2, 72)
+        ctx.fillRect(120, 424, 5.6*vanilla-2, 72)
         ctx.fillStyle="#3f51b5"
-        ctx.fillRect(682-5.6*vanilla, 424, 5.6*vanilla-2, 72)
+        ctx.fillRect(682-5.6*modding, 424, 5.6*modding-2, 72)
         ctx.fillStyle="#8bc34a"
         ctx.fillRect(120, 544, 5.6*strategist-2, 72)
         ctx.fillStyle="#9c27b0"
