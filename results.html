@@ -108,13 +108,13 @@ stats"></a></div></noscript>
         	{return ""}
     }
 
-    miner  = getQueryVariable("m")
+    fighter  = getQueryVariable("f")
     soloist     = getQueryVariable("s")
-    vanilla   = getQueryVariable("v")
+    modding   = getQueryVariable("m")
     duelist  = getQueryVariable("d")
-    fighter    = (100 - miner).toFixed(1)
+    miner    = (100 - fighter).toFixed(1)
     teamer     = (100 - soloist).toFixed(1)
-    modding = (100 - vanilla).toFixed(1)
+    vanilla = (100 - modding).toFixed(1)
     strategist = (100 - duelist).toFixed(1)
 
     setBarValue("miner", miner)
@@ -185,9 +185,9 @@ stats"></a></div></noscript>
         ctx.fillRect(120, 420, 560, 80)
         ctx.fillRect(120, 540, 560, 80)
         ctx.fillStyle="#f44336"
-        ctx.fillRect(120, 184, 5.6*fighter-2, 72)
+        ctx.fillRect(120, 184, 5.6*miner-2, 72)
         ctx.fillStyle="#00897b"
-        ctx.fillRect(682-5.6*miner, 184, 5.6*miner-2, 72)
+        ctx.fillRect(682-5.6*fighter, 184, 5.6*fighter-2, 72)
         ctx.fillStyle="#ff9800"
         ctx.fillRect(120, 304, 5.6*teamer-2, 72)
         ctx.fillStyle="#03a9f4"
