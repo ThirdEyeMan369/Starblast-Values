@@ -108,37 +108,37 @@ stats"></a></div></noscript>
         	{return ""}
     }
 
-    equality  = getQueryVariable("e")
-    peace     = getQueryVariable("d")
-    liberty   = getQueryVariable("g")
-    progress  = getQueryVariable("s")
-    wealth    = (100 - equality).toFixed(1)
-    might     = (100 - peace   ).toFixed(1)
-    authority = (100 - liberty ).toFixed(1)
-    tradition = (100 - progress).toFixed(1)
+    miner  = getQueryVariable("e")
+    teamer     = getQueryVariable("d")
+    vanilla   = getQueryVariable("g")
+    strategist  = getQueryVariable("s")
+    fighter    = (100 - equality).toFixed(1)
+    soloist     = (100 - peace   ).toFixed(1)
+    modding = (100 - liberty ).toFixed(1)
+    duelist = (100 - progress).toFixed(1)
 
-    setBarValue("equality", equality)
-    setBarValue("wealth", wealth)
-    setBarValue("peace", peace)
-    setBarValue("might", might)
-    setBarValue("liberty", liberty)
-    setBarValue("authority", authority)
-    setBarValue("progress", progress)
-    setBarValue("tradition", tradition)
+    setBarValue("miner", miner)
+    setBarValue("fighter", fighter)
+    setBarValue("teamer", teamer)
+    setBarValue("soloist", soloist)
+    setBarValue("vanilla", vanilla)
+    setBarValue("modding", modding)
+    setBarValue("strategist", strategist)
+    setBarValue("duelist", duelist)
 
-    document.getElementById("economic-label").innerHTML = setLabel(equality, econArray)
-    document.getElementById("diplomatic-label").innerHTML = setLabel(peace, diplArray)
-    document.getElementById("state-label").innerHTML = setLabel(liberty, govtArray)
-    document.getElementById("society-label").innerHTML = setLabel(progress, sctyArray)
+    document.getElementById("economic-label").innerHTML = setLabel(miner, econArray)
+    document.getElementById("diplomatic-label").innerHTML = setLabel(teamer, diplArray)
+    document.getElementById("state-label").innerHTML = setLabel(vanilla, govtArray)
+    document.getElementById("society-label").innerHTML = setLabel(strategist, sctyArray)
 
     ideology = ""
     ideodist = Infinity
     for (var i = 0; i < ideologies.length; i++) {
         dist = 0
-        dist += Math.pow(Math.abs(ideologies[i].stats.econ - equality), 2)
-        dist += Math.pow(Math.abs(ideologies[i].stats.govt - liberty), 2)
-        dist += Math.pow(Math.abs(ideologies[i].stats.dipl - peace), 1.73856063)
-        dist += Math.pow(Math.abs(ideologies[i].stats.scty - progress), 1.73856063)
+        dist += Math.pow(Math.abs(ideologies[i].stats.econ - miner), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.govt - vanilla), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.dipl - teamer), 1.73856063)
+        dist += Math.pow(Math.abs(ideologies[i].stats.scty - strategist), 1.73856063)
         if (dist < ideodist) {
             ideology = ideologies[i].name
             ideodist = dist
@@ -185,21 +185,21 @@ stats"></a></div></noscript>
         ctx.fillRect(120, 420, 560, 80)
         ctx.fillRect(120, 540, 560, 80)
         ctx.fillStyle="#f44336"
-        ctx.fillRect(120, 184, 5.6*equality-2, 72)
+        ctx.fillRect(120, 184, 5.6*fighter-2, 72)
         ctx.fillStyle="#00897b"
-        ctx.fillRect(682-5.6*wealth, 184, 5.6*wealth-2, 72)
+        ctx.fillRect(682-5.6*miner, 184, 5.6*miner-2, 72)
         ctx.fillStyle="#ff9800"
-        ctx.fillRect(120, 304, 5.6*might-2, 72)
+        ctx.fillRect(120, 304, 5.6*teamer-2, 72)
         ctx.fillStyle="#03a9f4"
-        ctx.fillRect(682-5.6*peace, 304, 5.6*peace-2, 72)
+        ctx.fillRect(682-5.6*soloist, 304, 5.6*soloist-2, 72)
         ctx.fillStyle="#ffeb3b"
-        ctx.fillRect(120, 424, 5.6*liberty-2, 72)
+        ctx.fillRect(120, 424, 5.6*modding-2, 72)
         ctx.fillStyle="#3f51b5"
-        ctx.fillRect(682-5.6*authority, 424, 5.6*authority-2, 72)
+        ctx.fillRect(682-5.6*vanilla, 424, 5.6*vanilla-2, 72)
         ctx.fillStyle="#8bc34a"
-        ctx.fillRect(120, 544, 5.6*tradition-2, 72)
+        ctx.fillRect(120, 544, 5.6*strategist-2, 72)
         ctx.fillStyle="#9c27b0"
-        ctx.fillRect(682-5.6*progress, 544, 5.6*progress-2, 72)
+        ctx.fillRect(682-5.6*duelist, 544, 5.6*duelist-2, 72)
         ctx.fillStyle="#222222"
         ctx.font="700 80px Montserrat"
         ctx.textAlign="left"
@@ -208,15 +208,15 @@ stats"></a></div></noscript>
         ctx.fillText(ideology, 20, 140)
 
         ctx.textAlign="left"
-        if (equality  > 30) {ctx.fillText(equality + "%", 130, 237.5)}
-        if (might     > 30) {ctx.fillText(might + "%", 130, 357.5)}
-        if (liberty   > 30) {ctx.fillText(liberty + "%", 130, 477.5)}
-        if (tradition > 30) {ctx.fillText(tradition + "%", 130, 597.5)}
+        if (miner  > 30) {ctx.fillText(miner + "%", 130, 237.5)}
+        if (teamer     > 30) {ctx.fillText(teamer + "%", 130, 357.5)}
+        if (vanilla   > 30) {ctx.fillText(vanilla + "%", 130, 477.5)}
+        if (strategist > 30) {ctx.fillText(strategist + "%", 130, 597.5)}
         ctx.textAlign="right"
-        if (wealth    > 30) {ctx.fillText(wealth + "%", 670, 237.5)}
-        if (peace     > 30) {ctx.fillText(peace + "%", 670, 357.5)}
-        if (authority > 30) {ctx.fillText(authority + "%", 670, 477.5)}
-        if (progress  > 30) {ctx.fillText(progress + "%", 670, 597.5)}
+        if (fighter    > 30) {ctx.fillText(fighter + "%", 670, 237.5)}
+        if (soloist     > 30) {ctx.fillText(soloist + "%", 670, 357.5)}
+        if (modding > 30) {ctx.fillText(modding + "%", 670, 477.5)}
+        if (duelist  > 30) {ctx.fillText(duelist + "%", 670, 597.5)}
 
         ctx.font="300 30px Montserrat"
         ctx.fillText("8values.github.io", 780, 60)
