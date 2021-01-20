@@ -19,28 +19,28 @@
 
 <h1>Results</h1>
 
-<h2>Economic Axis: <span class="weight-300" id="economic-label"></span></h2>
+<h2>Gameplay Axis: <span class="weight-300" id="gapl-label"></span></h2>
 <div class="axis">
     <img id="img-miner" src="Icons/miner.svg" height="128pt"/>
     <div class="bar miner" id="bar-miner"><div class="text-wrapper" id="miner"></div></div>
     <div class="bar fighter" id="bar-fighter"><div class="text-wrapper" id="fighter"></div></div>
     <img id="img-fighter" src="Icons/fighter.svg" height="128pt"/>
 </div>
-<h2>Diplomatic Axis: <span class="weight-300" id="diplomatic-label"></span></h2>
+<h2>Player Type Axis: <span class="weight-300" id="plty-label"></span></h2>
 <div class="axis">
     <img id="img-teamer" src="Icons/teamer.svg" height="128pt"/>
     <div class="bar teamer" id="bar-teamer"><div class="text-wrapper" id="teamer"></div></div>
     <div class="bar soloist" id="bar-soloist"><div class="text-wrapper" id="soloist"></div></div>
     <img id="img-soloist" src="Icons/soloist.svg" height="128pt"/>
 </div>
-<h2>Civil Axis: <span class="weight-300" id="state-label"></span></h2>
+<h2>Modes Axis: <span class="weight-300" id="mode-label"></span></h2>
 <div class="axis">
     <img id="img-vanilla" src="Icons/vanilla.svg" height="128pt"/>
     <div class="bar vanilla" id="bar-vanilla"><div class="text-wrapper" id="vanilla"></div></div>
     <div class="bar modding" id="bar-modding"><div class="text-wrapper" id="modding"></div></div>
     <img id="img-modding" src="Icons/modding.svg" height="128pt"/>
 </div>
-<h2>Societal Axis: <span class="weight-300" id="society-label"></span></h2>
+<h2>Thought Process Axis: <span class="weight-300" id="thpr-label"></span></h2>
 <div class="axis">
     <img id="img-strategist" src="Icons/strategist.svg" height="128pt"/>
     <div class="bar strategist" id="bar-strategist"><div class="text-wrapper" id="strategist"></div></div>
@@ -91,10 +91,10 @@ stats"></a></div></noscript>
         }
     }
 
-    econArray = ["Communist","Socialist","Social","Centrist","Market","Capitalist","Laissez-Faire"]
-    diplArray = ["Cosmopolitan","Internationalist","Peaceful","Balanced","Patriotic","Nationalist","Chauvinist"]
-    govtArray = ["Anarchist","Libertarian","Liberal","Moderate","Statist","Authoritarian","Totalitarian"]
-    sctyArray = ["Revolutionary","Very Progressive","Progressive","Neutral","Traditional","Very Traditional","Reactionary"]
+    gaplArray = ["Minaholic","Miner","Contributor","Neutral","Combative","Fighter","Duelist"]
+    pltyArray = ["Hivemind","Wolfpack","Teamer","Casual Player","Independent","Soloist","Isolated"]
+    modeArray = ["Chocolate Denier","Conservative","Simplified","Centered","Complex","Progressional","Starblast 2"]
+    thprArray = ["Mastermind","Strategist","Thinker","Casual Player","Rusher","Quick Thinker","Rampage"]
 
     function setLabel(val,ary) {
         if (val > 100) { return "" } else
@@ -126,19 +126,19 @@ stats"></a></div></noscript>
     setBarValue("impulse", impulse)
     setBarValue("strategist", strategist)
 
-    document.getElementById("economic-label").innerHTML = setLabel(miner, econArray)
-    document.getElementById("diplomatic-label").innerHTML = setLabel(soloist, diplArray)
-    document.getElementById("state-label").innerHTML = setLabel(vanilla, govtArray)
-    document.getElementById("society-label").innerHTML = setLabel(impulse, sctyArray)
+    document.getElementById("gapl-label").innerHTML = setLabel(miner, econArray)
+    document.getElementById("plty-label").innerHTML = setLabel(soloist, diplArray)
+    document.getElementById("mode-label").innerHTML = setLabel(vanilla, govtArray)
+    document.getElementById("thpr-label").innerHTML = setLabel(impulse, sctyArray)
 
     ideology = ""
     ideodist = Infinity
     for (var i = 0; i < ideologies.length; i++) {
         dist = 0
-        dist += Math.pow(Math.abs(ideologies[i].stats.econ - miner), 2)
-        dist += Math.pow(Math.abs(ideologies[i].stats.govt - vanilla), 2)
-        dist += Math.pow(Math.abs(ideologies[i].stats.dipl - soloist), 1.73856063)
-        dist += Math.pow(Math.abs(ideologies[i].stats.scty - impulse), 1.73856063)
+        dist += Math.pow(Math.abs(ideologies[i].stats.gapl - miner), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.plty - vanilla), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.mode - soloist), 1.73856063)
+        dist += Math.pow(Math.abs(ideologies[i].stats.thpr - impulse), 1.73856063)
         if (dist < ideodist) {
             ideology = ideologies[i].name
             ideodist = dist
@@ -222,10 +222,10 @@ stats"></a></div></noscript>
         ctx.fillText("8values.github.io", 780, 60)
 		ctx.fillText(version, 780, 90)
         ctx.textAlign="center"
-        ctx.fillText("Economic Axis: " + document.getElementById("economic-label").innerHTML, 400, 175)
-        ctx.fillText("Diplomatic Axis: " + document.getElementById("diplomatic-label").innerHTML, 400, 295)
-        ctx.fillText("Civil Axis: " + document.getElementById("state-label").innerHTML, 400, 415)
-        ctx.fillText("Societal Axis: " + document.getElementById("society-label").innerHTML, 400, 535)
+        ctx.fillText("Gameplay Axis: " + document.getElementById("gapl-label").innerHTML, 400, 175)
+        ctx.fillText("Player Type Axis: " + document.getElementById("plty-label").innerHTML, 400, 295)
+        ctx.fillText("Modes Axis: " + document.getElementById("mode-label").innerHTML, 400, 415)
+        ctx.fillText("Thought Process Axis: " + document.getElementById("thpr-label").innerHTML, 400, 535)
 
         document.getElementById("banner").src = c.toDataURL();
     }
