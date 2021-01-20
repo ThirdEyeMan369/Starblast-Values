@@ -26,13 +26,13 @@ p.value-description {
 }
 p.question {
     margin: 16pt auto;
-    color: #333333;
+    color: #eeeeee;
     font-family: 'Montserrat', sans-serif;
     font-weight: normal;
     width: 70%;
     min-width: 500pt;
     min-height: 144pt;
-    background-color: #eeeeee;
+    background-color: #0e1d25;
     padding: 16pt;
     border-radius: 16pt;
     font-size: 36pt;
