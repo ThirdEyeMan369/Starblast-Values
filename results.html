@@ -47,6 +47,20 @@
     <div class="bar impulse" id="bar-impulse"><div class="text-wrapper" id="impulse"></div></div>
     <img id="img-impulse" src="Icons/impulse.svg" height="128pt"/>
 </div>
+<h2>Ship Type Axis: <span class="weight-300" id="shty-label"></span></h2>
+<div class="axis">
+    <img id="img-tank" src="Icons/tank.svg" height="128pt"/>
+    <div class="bar tank" id="bar-tank"><div class="text-wrapper" id="tank"></div></div>
+    <div class="bar mobile" id="bar-mobile"><div class="text-wrapper" id="mobile"></div></div>
+    <img id="img-mobile" src="Icons/mobile.svg" height="128pt"/>
+</div>
+<h2>Ethics Axis: <span class="weight-300" id="ethi-label"></span></h2>
+<div class="axis">
+    <img id="img-ethical" src="Icons/ethical.svg" height="128pt"/>
+    <div class="bar ethical" id="bar-ethical"><div class="text-wrapper" id="ethical"></div></div>
+    <div class="bar unlawful" id="bar-unlawful"><div class="text-wrapper" id="unlawful"></div></div>
+    <img id="img-unlawful" src="Icons/unlawful.svg" height="128pt"/>
+</div>
 <h2>Closest Match: <span class="weight-300" id="ideology-label"></span></h2>
 <p>Ideological matching is a work in progress, and is much less accurate than the values and axes.</p>
 <p>You can send these results by copying and pasting the URL at the top of the page or using the image below. Think your matched ideology was wrong? Want to help us calibrate the test? Send the results along with your political ideology to us at eightvalues@gmail.com, or send us any comments, questions, or criticism. </p>
@@ -95,7 +109,9 @@ stats"></a></div></noscript>
     pltyArray = ["Isolated","Soloist","Independent","Casual Player","Teamer","Wolfpack","Hivemind"]
     modeArray = ["Chocolate Denier","Conservative","Simplified","Centered","Complex","Progressional","Starblast 2"]
     thprArray = ["Rampage","Quick Thinker","Rusher","Casual Player","Think","Strategist","Mastermind"]
-
+    shtyArray = ["Tankman","Barricade","Heavy Enjoyer","Ship Enjoyer","Mobile Enjoyer","Speedartist","Lightning"]  
+    ethiArray = ["Angel","Good Hearted","Caring","No Feeling","Troll","Joker","Devil"]	
+	
     function setLabel(val,ary) {
         if (val > 100) { return "" } else
         if (val > 90) { return ary[0] } else
