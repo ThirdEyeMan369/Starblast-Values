@@ -124,14 +124,18 @@ stats"></a></div></noscript>
         	{return ""}
     }
 
-    fighter  = getQueryVariable("e")
-    soloist     = getQueryVariable("d")
-    modding   = getQueryVariable("g")
-    impulse  = getQueryVariable("s")
+    fighter  = getQueryVariable("g")
+    soloist     = getQueryVariable("p")
+    modding   = getQueryVariable("m")
+    impulse  = getQueryVariable("t")
+    mobile = getQueryVariable("s")
+    unlawful = getQueryVariable("e")	
     miner    = (100 - fighter).toFixed(1)
     teamer     = (100 - soloist).toFixed(1)
     vanilla = (100 - modding).toFixed(1)
     strategist = (100 - impulse).toFixed(1)
+    tank = (100 - mobile).toFixed(1)
+    ethical = (100 - unlawful).toFixed(1)	
 
     setBarValue("miner", miner)
     setBarValue("fighter", fighter)
@@ -141,11 +145,17 @@ stats"></a></div></noscript>
     setBarValue("modding", modding)
     setBarValue("strategist", strategist)
     setBarValue("impulse", impulse)
+    setBarValue("tank", tank)
+    setBarValue("mobile", mobile)
+    setBarValue("ethical", ethical)
+    setBarValue("unlawful", unlawful)	 
 	
     document.getElementById("gapl-label").innerHTML = setLabel(miner, gaplArray)
     document.getElementById("plty-label").innerHTML = setLabel(teamer, pltyArray)
     document.getElementById("mode-label").innerHTML = setLabel(vanilla, modeArray)
     document.getElementById("thpr-label").innerHTML = setLabel(strategist, thprArray)
+    document.getElementById("shty-label").innerHTML = setLabel(tank, shtyArray)
+    document.getElementById("ethi-label").innerHTML = setLabel(ethical, ethiArray)	
 
     ideology = ""
     ideodist = Infinity
@@ -155,6 +165,8 @@ stats"></a></div></noscript>
         dist += Math.pow(Math.abs(ideologies[i].stats.plty - vanilla), 2)
         dist += Math.pow(Math.abs(ideologies[i].stats.mode - teamer), 2)
         dist += Math.pow(Math.abs(ideologies[i].stats.thpr - strategist), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.shty - tank), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.ethi - ethical), 2)
         if (dist < ideodist) {
             ideology = ideologies[i].name
             ideodist = dist
@@ -174,9 +186,9 @@ stats"></a></div></noscript>
         var c = document.createElement("canvas")
         var ctx = c.getContext("2d")
         c.width = 800;
-        c.height = 650;
+        c.height = 950;
         ctx.fillStyle = "#0e1d25"
-        ctx.fillRect(0,0,800,650);
+        ctx.fillRect(0,0,800,950);
 
         img = document.getElementById("img-miner")
         ctx.drawImage(img, 20, 170, 100, 100);
@@ -194,12 +206,22 @@ stats"></a></div></noscript>
         ctx.drawImage(img, 20, 530, 100, 100)
         img = document.getElementById("img-impulse")
         ctx.drawImage(img, 680, 530, 100, 100)
-
+        img = document.getElementById("img-tank")
+        ctx.drawImage(img, 20, 650, 100, 100)
+	img = document.getElementById("img-mobile")
+        ctx.drawImage(img, 680, 650, 100, 100)
+	img = document.getElementById("img-ethical")
+        ctx.drawImage(img, 20, 770, 100, 100)
+	img = document.getElementById("img-unlawful")
+        ctx.drawImage(img, 680, 770, 100, 100)
+	    
         ctx.fillStyle="#222222"
         ctx.fillRect(120, 180, 560, 80)
         ctx.fillRect(120, 300, 560, 80)
         ctx.fillRect(120, 420, 560, 80)
         ctx.fillRect(120, 540, 560, 80)
+        ctx.fillRect(120, 660, 560, 80)
+	ctx.fillRect(120, 780, 560, 80)    
         ctx.fillStyle="#fde100"
         ctx.fillRect(120, 184, 5.6*miner-2, 72)
         ctx.fillStyle="#f54036"
@@ -216,6 +238,14 @@ stats"></a></div></noscript>
         ctx.fillRect(120, 544, 5.6*strategist-2, 72)
         ctx.fillStyle="#7dffff"
         ctx.fillRect(682-5.6*impulse, 544, 5.6*impulse-2, 72)
+	ctx.fillStyle="#fd8fe0"
+        ctx.fillRect(120, 664, 5.6*tank-2, 72)
+        ctx.fillStyle="#7dffff"
+        ctx.fillRect(682-5.6*mobile, 664, 5.6*mobile-2, 72)
+	ctx.fillStyle="#fd8fe0"
+        ctx.fillRect(120, 784, 5.6*ethical-2, 72)
+        ctx.fillStyle="#7dffff"
+        ctx.fillRect(682-5.6*unlawful, 784, 5.6*unlawful-2, 72)    
         ctx.fillStyle="#eeeeee"
         ctx.font="700 80px Montserrat"
         ctx.textAlign="left"
@@ -224,16 +254,19 @@ stats"></a></div></noscript>
         ctx.fillText(ideology, 20, 140)
 
         ctx.textAlign="left"
-        if (miner  > 30) {ctx.fillText(miner + "%", 130, 237.5)}
+        if (miner      > 30) {ctx.fillText(miner + "%", 130, 237.5)}
         if (teamer     > 30) {ctx.fillText(teamer + "%", 130, 357.5)}
-        if (vanilla   > 30) {ctx.fillText(vanilla + "%", 130, 477.5)}
+        if (vanilla    > 30) {ctx.fillText(vanilla + "%", 130, 477.5)}
         if (strategist > 30) {ctx.fillText(strategist + "%", 130, 597.5)}
+        if (tank       > 30) {ctx.fillText(tank + "%", 130, 717.5)}
+        if (ethical    > 30) {ctx.fillText(ethical + "%", 130, 837.5)}
         ctx.textAlign="right"
         if (fighter    > 30) {ctx.fillText(fighter + "%", 670, 237.5)}
-        if (soloist     > 30) {ctx.fillText(soloist + "%", 670, 357.5)}
-        if (modding > 30) {ctx.fillText(modding + "%", 670, 477.5)}
-        if (impulse  > 30) {ctx.fillText(impulse + "%", 670, 597.5)}
-
+        if (soloist    > 30) {ctx.fillText(soloist + "%", 670, 357.5)}
+        if (modding    > 30) {ctx.fillText(modding + "%", 670, 477.5)}
+        if (impulse    > 30) {ctx.fillText(impulse + "%", 670, 597.5)}
+        if (mobile     > 30) {ctx.fillText(tank + "%", 670, 717.5)}
+        if (unlawful   > 30) {ctx.fillText(ethical + "%", 670, 837.5)}
         ctx.font="300 30px Montserrat"
         ctx.fillText("8values.github.io", 780, 60)
 		ctx.fillText(version, 780, 90)
@@ -242,6 +275,8 @@ stats"></a></div></noscript>
         ctx.fillText("Player Type Axis: " + document.getElementById("plty-label").innerHTML, 400, 295)
         ctx.fillText("Modes Axis: " + document.getElementById("mode-label").innerHTML, 400, 415)
         ctx.fillText("Thought Process Axis: " + document.getElementById("thpr-label").innerHTML, 400, 535)
+        ctx.fillText("Ship Type Axis: " + document.getElementById("shty-label").innerHTML, 400, 655)
+        ctx.fillText("Ethics Axis: " + document.getElementById("ethi-label").innerHTML, 400, 775)
 
         document.getElementById("banner").src = c.toDataURL();
     }
