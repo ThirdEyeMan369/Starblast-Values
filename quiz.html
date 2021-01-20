@@ -48,10 +48,10 @@ stats"></a></div></noscript>
 
 <!-- JavaScript for the test itself -->
 <script>
-    var max_gapl, max_plty, max_mode, max_thpr; // Max possible scores
-    max_gapl = max_plty = max_mode = max_thpr = 0;
-    var gapl, plty, mode, thpr; // User's scores
-    gapl = plty = mode = thpr = 0;
+    var max_gapl, max_plty, max_mode, max_thpr, max_shty, max_ethi; // Max possible scores
+    max_gapl = max_plty = max_mode = max_thpr = max_shty = max_ethi = 0;
+    var gapl, plty, mode, thpr, shty, ethi; // User's scores
+    gapl = plty = mode = thpr = shty = ethu = 0;
     var qn = 0; // Question number
     var prev_answer = null;
     init_question();
@@ -60,6 +60,8 @@ stats"></a></div></noscript>
         max_plty += Math.abs(questions[i].effect.plty)
         max_mode += Math.abs(questions[i].effect.mode)
         max_thpr += Math.abs(questions[i].effect.thpr)
+        max_shty += Math.abs(questions[i].effect.shty)
+        max_ethi += Math.abs(questions[i].effect.ethi)
     }
     function init_question() {
         document.getElementById("question-text").innerHTML = questions[qn].question;
@@ -79,6 +81,8 @@ stats"></a></div></noscript>
         plty += mult*questions[qn].effect.plty
         mode += mult*questions[qn].effect.mode
         thpr += mult*questions[qn].effect.thpr
+        shty += mult*questions[qn].effect.shty
+        ethi += mult*questions[qn].effect.ethi
         qn++;
         prev_answer = mult;
         if (qn < questions.length) {
@@ -96,6 +100,8 @@ stats"></a></div></noscript>
         plty -= prev_answer * questions[qn].effect.plty;
         mode -= prev_answer * questions[qn].effect.mode;
         thpr -= prev_answer * questions[qn].effect.thpr;
+        shty -= prev_answer * questions[qn].effect.shty;
+        ethi -= prev_answer * questions[qn].effect.ethi;
         prev_answer = null;
         init_question();
 
@@ -109,6 +115,8 @@ stats"></a></div></noscript>
             + `&d=${calc_score(plty,max_plty)}`
             + `&g=${calc_score(mode,max_mode)}`
             + `&s=${calc_score(thpr,max_thpr)}`
+            + `&s=${calc_score(shty,max_shty)}`
+            + `&s=${calc_score(ethi,max_ethi)}`
     }
 </script>
 </body>
