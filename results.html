@@ -44,8 +44,8 @@
 <div class="axis">
     <img id="img-strategist" src="Icons/strategist.svg" height="128pt"/>
     <div class="bar strategist" id="bar-strategist"><div class="text-wrapper" id="strategist"></div></div>
-    <div class="bar duelist" id="bar-duelist"><div class="text-wrapper" id="duelist"></div></div>
-    <img id="img-duelist" src="Icons/duelist.svg" height="128pt"/>
+    <div class="bar impulse" id="bar-impulse"><div class="text-wrapper" id="impulse"></div></div>
+    <img id="img-impulse" src="Icons/impulse.svg" height="128pt"/>
 </div>
 <h2>Closest Match: <span class="weight-300" id="ideology-label"></span></h2>
 <p>Ideological matching is a work in progress, and is much less accurate than the values and axes.</p>
@@ -111,11 +111,11 @@ stats"></a></div></noscript>
     fighter  = getQueryVariable("e")
     soloist     = getQueryVariable("d")
     modding   = getQueryVariable("g")
-    duelist  = getQueryVariable("s")
+    impulse  = getQueryVariable("s")
     miner    = (100 - fighter).toFixed(1)
     teamer     = (100 - soloist).toFixed(1)
     vanilla = (100 - modding).toFixed(1)
-    strategist = (100 - duelist).toFixed(1)
+    strategist = (100 - impulse).toFixed(1)
 
     setBarValue("miner", miner)
     setBarValue("fighter", fighter)
@@ -123,13 +123,13 @@ stats"></a></div></noscript>
     setBarValue("teamer", teamer)
     setBarValue("vanilla", vanilla)
     setBarValue("modding", modding)
-    setBarValue("duelist", duelist)
+    setBarValue("impulse", impulse)
     setBarValue("strategist", strategist)
 
     document.getElementById("economic-label").innerHTML = setLabel(miner, econArray)
     document.getElementById("diplomatic-label").innerHTML = setLabel(soloist, diplArray)
     document.getElementById("state-label").innerHTML = setLabel(vanilla, govtArray)
-    document.getElementById("society-label").innerHTML = setLabel(duelist, sctyArray)
+    document.getElementById("society-label").innerHTML = setLabel(impulse, sctyArray)
 
     ideology = ""
     ideodist = Infinity
@@ -138,7 +138,7 @@ stats"></a></div></noscript>
         dist += Math.pow(Math.abs(ideologies[i].stats.econ - miner), 2)
         dist += Math.pow(Math.abs(ideologies[i].stats.govt - vanilla), 2)
         dist += Math.pow(Math.abs(ideologies[i].stats.dipl - soloist), 1.73856063)
-        dist += Math.pow(Math.abs(ideologies[i].stats.scty - duelist), 1.73856063)
+        dist += Math.pow(Math.abs(ideologies[i].stats.scty - impulse), 1.73856063)
         if (dist < ideodist) {
             ideology = ideologies[i].name
             ideodist = dist
@@ -176,7 +176,7 @@ stats"></a></div></noscript>
         ctx.drawImage(img, 680, 410, 100, 100)
         img = document.getElementById("img-strategist")
         ctx.drawImage(img, 20, 530, 100, 100)
-        img = document.getElementById("img-duelist")
+        img = document.getElementById("img-impulse")
         ctx.drawImage(img, 680, 530, 100, 100)
 
         ctx.fillStyle="#222222"
@@ -199,7 +199,7 @@ stats"></a></div></noscript>
         ctx.fillStyle="#fd8fe0"
         ctx.fillRect(120, 544, 5.6*strategist-2, 72)
         ctx.fillStyle="#7dffff"
-        ctx.fillRect(682-5.6*duelist, 544, 5.6*duelist-2, 72)
+        ctx.fillRect(682-5.6*impulse, 544, 5.6*impulse-2, 72)
         ctx.fillStyle="#eeeeee"
         ctx.font="700 80px Montserrat"
         ctx.textAlign="left"
@@ -216,7 +216,7 @@ stats"></a></div></noscript>
         if (fighter    > 30) {ctx.fillText(fighter + "%", 670, 237.5)}
         if (soloist     > 30) {ctx.fillText(soloist + "%", 670, 357.5)}
         if (modding > 30) {ctx.fillText(modding + "%", 670, 477.5)}
-        if (duelist  > 30) {ctx.fillText(duelist + "%", 670, 597.5)}
+        if (impulse  > 30) {ctx.fillText(impulse + "%", 670, 597.5)}
 
         ctx.font="300 30px Montserrat"
         ctx.fillText("8values.github.io", 780, 60)
