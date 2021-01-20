@@ -137,8 +137,8 @@ stats"></a></div></noscript>
         dist = 0
         dist += Math.pow(Math.abs(ideologies[i].stats.gapl - miner), 2)
         dist += Math.pow(Math.abs(ideologies[i].stats.plty - vanilla), 2)
-        dist += Math.pow(Math.abs(ideologies[i].stats.mode - soloist), 1.73856063)
-        dist += Math.pow(Math.abs(ideologies[i].stats.thpr - impulse), 1.73856063)
+        dist += Math.pow(Math.abs(ideologies[i].stats.mode - teamer), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.thpr - strategist), 2)
         if (dist < ideodist) {
             ideology = ideologies[i].name
             ideodist = dist
