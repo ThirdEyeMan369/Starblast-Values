@@ -119,7 +119,7 @@ ideologies = [
     {
         "name": "Libertarian Socialism",
         "stats": {
-            "econ": 80,
+            "gapl": 80,
             "plty": 80,
             "mode": 80,
             "thpr": 80
