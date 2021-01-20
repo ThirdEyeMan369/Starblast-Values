@@ -181,6 +181,26 @@ div.strategist {
     text-align: left;
     border-right-style: solid;
 }
+div.tank {
+    background-color: #afafaf;
+    text-align: left;
+    border-right-style: solid; 
+}
+div.mobile {
+    background-color: #bfff50;
+    text-align: left;
+    border-right-style: solid;
+}
+div.ethical {
+    background-color: #fffec1;
+    text-align: left;
+    border-right-style: solid;
+}
+div.unlawful {
+    background-color: #640000;
+    text-align: left;
+    border-right-style: solid;   
+}
 span.weight-300 {
     font-weight: 300;
 }
