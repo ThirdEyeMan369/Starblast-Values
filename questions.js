@@ -1,8 +1,8 @@
 questions = [
     {
-        "question": "Oppression by corporations is more of a concern than oppression by governments.",
+        "question": ""Fuck mining" - Uranus is big, July 12th 2018",
         "effect": {
-            "gapl": 10,
+            "gapl": -10,
             "plty": 0,
             "mode": 0,
             "thpr": 0,
