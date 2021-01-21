@@ -171,8 +171,14 @@ stats"></a></div></noscript>
             ideology = ideologies[i].name
             ideodist = dist
         }
-    }
-    document.getElementById("ideology-label").innerHTML = ideology{
+        document.getElementById("ideology-label").innerHTML = ideology
+
+    function createImage(src, x, y, w, h) {
+        img = new Image ()
+        img.src = src
+        img.onLoad = function() {
+            ctx.drawImage(img, x, y, w, h)
+        }
     }
 
    
