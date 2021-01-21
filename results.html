@@ -183,12 +183,12 @@ stats"></a></div></noscript>
     }
 
    
-        const c = document.getElementById('banner')
-        const ctx = c.getContext("2d")
+        var c = document.getElementById('banner')
+        var ctx = c.getContext("2d")
         ctx.fillStyle = "#0e1d25"
         ctx.fillRect(0,0,800,1000);
 
-        let img = document.getElementById("img-miner")
+        img = document.getElementById("img-miner")
         ctx.drawImage(img, 20, 170, 100, 100);
         img = document.getElementById("img-fighter")
         ctx.drawImage(img, 680, 170, 100, 100)
