@@ -65,7 +65,7 @@
 <p>Ideological matching is a work in progress, and is much less accurate than the values and axes.</p>
 <p>You can send these results by copying and pasting the URL at the top of the page or using the image below. Think your matched ideology was wrong? Want to help us calibrate the test? Send the results along with your political ideology to us at eightvalues@gmail.com, or send us any comments, questions, or criticism. </p>
 <hr/>
-<img src="" id="banner">
+<canvas id="banner" width=800 height=1000 style="font-family:Montserrat"></canvas>
 <button class="button" onclick="location.href='index.html';" style="background-color: #2196f3;">Back</button> <br>
 <!-- Website visit statistics - no personal information is collected! -->
 <script type="text/javascript">
@@ -183,14 +183,12 @@ stats"></a></div></noscript>
     }
 
     window.onload = function() {
-        var c = document.createElement("canvas")
-        var ctx = c.getContext("2d")
-        c.width = 800;
-        c.height = 1000;
+        const c = document.getElementById('banner')
+        const ctx = c.getContext("2d")
         ctx.fillStyle = "#0e1d25"
         ctx.fillRect(0,0,800,1000);
 
-        img = document.getElementById("img-miner")
+        let img = document.getElementById("img-miner")
         ctx.drawImage(img, 20, 170, 100, 100);
         img = document.getElementById("img-fighter")
         ctx.drawImage(img, 680, 170, 100, 100)
@@ -279,7 +277,7 @@ stats"></a></div></noscript>
         ctx.fillText("Ship Type Axis: " + document.getElementById("shty-label").innerHTML, 400, 655)
         ctx.fillText("Ethics Axis: " + document.getElementById("ethi-label").innerHTML, 400, 775)
 
-        document.getElementById("banner").src = c.toDataURL();
+        
     }
     </script>
 </body>
