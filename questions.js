@@ -352,7 +352,6 @@ questions = [
             "ethi": 0
         }
     },
-    
     {
         "question": "I like to put myself on the front line in battles",
         "effect": {
@@ -376,7 +375,7 @@ questions = [
         }
     },
     {
-        "question": "A "screw off" emote should exist",
+        "question": "A screw off emote should exist",
         "effect": {
             "gapl": 0,
             "plty": 10,
@@ -397,8 +396,4 @@ questions = [
             "ethi": -10
         }
     },
-    
-    
-    
-    
 ];
