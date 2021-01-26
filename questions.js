@@ -28,7 +28,7 @@ questions = [
             "gapl": 0,
             "plty": -10,
             "mode": 0,
-            "thpr": 5,
+            "thpr": -5,
             "shty": 0,
             "ethi": 0
         }
