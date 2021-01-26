@@ -2,56 +2,56 @@ ideologies = [
     {
         "name": "Mining God",
         "stats": {
-            "gapl": 100,
-            "plty": 50,
-            "mode": 50,
-            "thpr": 50,
-            "shty": 50,
-            "ethi": 50
+            "gapl": 10,
+            "plty": 0,
+            "mode": -10,
+            "thpr": -10,
+            "shty": -10,
+            "ethi": 0
         }
     },
     {
         "name": "Killing God",
         "stats": {
             "gapl": 0,
-            "plty": 50,
-            "mode": 50,
-            "thpr": 50,
-            "shty": 50,
-            "ethi": 50
+            "plty": 20,
+            "mode": 0,
+            "thpr": 10,
+            "shty": 10,
+            "ethi": 5
         }
     },
     {
         "name": "Hiveminded",
         "stats": {
-            "gapl": 50,
-            "plty": 100,
-            "mode": 50,
-            "thpr": 50,
-            "shty": 50,
-            "ethi": 50
+            "gapl": 5,
+            "plty": 10,
+            "mode": 20,
+            "thpr": -20,
+            "shty": -10,
+            "ethi": 0
         }
     },
     {
         "name": "Isolated",
         "stats": {
-            "gapl": 50,
+            "gapl": 5,
             "plty": 0,
-            "mode": 50,
-            "thpr": 50
-            "shty": 50
-            "ethi": 50
+            "mode": 5,
+            "thpr": 5,
+            "shty": 5,
+            "ethi": 5
         }
     },
     {
         "name": "Anarcho-Communism",
         "stats": {
-            "gapl": 100,
-            "plty": 50,
-            "mode": 100,
-            "thpr": 90
-            "shty": 40
-            "ethi": 0
+            "gapl": 10,
+            "plty": 30,
+            "mode": -20,
+            "thpr": 10,
+            "shty": 20,
+            "ethi": -5
         }
     },
     
