@@ -608,7 +608,7 @@ questions = [
     {
         "question": "I am an aggressive player",
         "effect": {
-            "gapl": 5,
+            "gapl": 10,
             "plty": 0,
             "mode": 0,
             "thpr": 10,
@@ -671,5 +671,653 @@ questions = [
             "ethi": -10
         }
     },
-    
+    {
+        "question": "I have sabotaged other players",
+        "effect": {
+            "gapl": 0,
+            "plty": 0,
+            "mode": 0,
+            "thpr": 5,
+            "shty": 0,
+            "ethi": 10
+        }
+    },
+    {
+        "question": "I would want a single player mode",
+        "effect": {
+            "gapl": 0,
+            "plty": 10,
+            "mode": -5,
+            "thpr": 0,
+            "shty": 0,
+            "ethi": 0
+        }
+    },
+    {
+        "question": "I tend to spam torpedos into groups of players",
+        "effect": {
+            "gapl": 10,
+            "plty": 0,
+            "mode": 0,
+            "thpr": 10,
+            "shty": 0,
+            "ethi": 0
+        }
+    },
+    {
+        "question": "I always use the current strongest ship",
+        "effect": {
+            "gapl": 5,
+            "plty": 0,
+            "mode": 0,
+            "thpr": 10,
+            "shty": 0,
+            "ethi": 10
+        }
+    },
+    {
+        "question": "I enjoy playing large team events like ACW/AOW",
+        "effect": {
+            "gapl": 0,
+            "plty": -10,
+            "mode": 0,
+            "thpr": 0,
+            "shty": 0,
+            "ethi": -5
+        }
+    },
+    {
+        "question": "The tutorial should and stay focused solely on the primary modes",
+        "effect": {
+            "gapl": 0,
+            "plty": 0,
+            "mode": -10,
+            "thpr": 0,
+            "shty": 0,
+            "ethi": 0
+        }
+    },
+    {
+        "question": "The foundation of the game should rely less on mining",
+        "effect": {
+            "gapl": 10,
+            "plty": 0,
+            "mode": 5,
+            "thpr": 0,
+            "shty": 5,
+            "ethi": 0
+        }
+    },
+    {
+        "question": "I only mine to get the ship and secondary weapons I want",
+        "effect": {
+            "gapl": 10,
+            "plty": 0,
+            "mode": 0,
+            "thpr": 5,
+            "shty": 0,
+            "ethi": 5
+        }
+    },
+    {
+        "question": "The developers should focus more on Modding Space",
+        "effect": {
+            "gapl": 0,
+            "plty": 0,
+            "mode": 10,
+            "thpr": 0,
+            "shty": 0,
+            "ethi": 0
+        }
+    },
+    {
+        "question": "I mine as much as possible to get ahead of my opponents",
+        "effect": {
+            "gapl": -10,
+            "plty": 0,
+            "mode": 0,
+            "thpr": -5,
+            "shty": 0,
+            "ethi": 0
+        }
+    },
+    {
+        "question": "I usually do not take part in low tier fights",
+        "effect": {
+            "gapl": -10,
+            "plty": 0,
+            "mode": 0,
+            "thpr": -5,
+            "shty": 0,
+            "ethi": 0
+        }
+    },
+    {
+        "question": "Faster ships should be more effective at mining",
+        "effect": {
+            "gapl": -5,
+            "plty": 0,
+            "mode": 0,
+            "thpr": 0,
+            "shty": 10,
+            "ethi": 0
+        }
+    },
+    {
+        "question": "I usually wait for my opponent to come at me first",
+        "effect": {
+            "gapl": 5,
+            "plty": 0,
+            "mode": 0,
+            "thpr": -10,
+            "shty": 0,
+            "ethi": 0
+        }
+    },
+    {
+        "question": "I treat Starblast as a big game of chess",
+        "effect": {
+            "gapl": 0,
+            "plty": 0,
+            "mode": 0,
+            "thpr": -10,
+            "shty": 0,
+            "ethi": 0
+        }
+    },
+    {
+        "question": "Ramming enemies is fun",
+        "effect": {
+            "gapl": 5,
+            "plty": 0,
+            "mode": 0,
+            "thpr": 10,
+            "shty": -10,
+            "ethi": 0
+        }
+    },
+    {
+        "question": "Sacrificing yourself for the team is sometimes necessary",
+        "effect": {
+            "gapl": 0,
+            "plty": 0,
+            "mode": 0,
+            "thpr": 10,
+            "shty": 0,
+            "ethi": -5
+        }
+    },
+    {
+        "question": "I don't usually watch my radar",
+        "effect": {
+            "gapl": 0,
+            "plty": 0,
+            "mode": 0,
+            "thpr": 10,
+            "shty": 0,
+            "ethi": 0
+        }
+    },
+    {
+        "question": "I like to use defense pods",
+        "effect": {
+            "gapl": 0,
+            "plty": 0,
+            "mode": 0,
+            "thpr": -5,
+            "shty": -10,
+            "ethi": 0
+        }
+    },
+    {
+        "question": "I team with new players so they can enjoy the game",
+        "effect": {
+            "gapl": 0,
+            "plty": -5,
+            "mode": 0,
+            "thpr": 0,
+            "shty": 0,
+            "ethi": -10
+        }
+    },
+    {
+        "question": "The faster, the better",
+        "effect": {
+            "gapl": 0,
+            "plty": 0,
+            "mode": 0,
+            "thpr": 5,
+            "shty": 10,
+            "ethi": 0
+        }
+    },
+    {
+        "question": "I only heal specific players in team games",
+        "effect": {
+            "gapl": 0,
+            "plty": -5,
+            "mode": -5,
+            "thpr": -10,
+            "shty": 0,
+            "ethi": 10
+        }
+    },
+    {
+        "question": "I have purposely ruined the game experienced for other players",
+        "effect": {
+            "gapl": 0,
+            "plty": 0,
+            "mode": 0,
+            "thpr": 10,
+            "shty": 0,
+            "ethi": 10
+        }
+    },
+    {
+        "question": "I compete in Pro Deathmatch",
+        "effect": {
+            "gapl": 0,
+            "plty": 10,
+            "mode": -5,
+            "thpr": 5,
+            "shty": 0,
+            "ethi": 0
+        }
+    },
+    {
+        "question": "My team mates come before me",
+        "effect": {
+            "gapl": 0,
+            "plty": -5,
+            "mode": 0,
+            "thpr": 5,
+            "shty": 0,
+            "ethi": -10
+        }
+    },
+    {
+        "question": "People are generally too concentrated on mods",
+        "effect": {
+            "gapl": 0,
+            "plty": 0,
+            "mode": -10,
+            "thpr": 0,
+            "shty": 0,
+            "ethi": 0
+        }
+    },
+    {
+        "question": "The ability to team with my friends is what makes me play Starblast",
+        "effect": {
+            "gapl": 0,
+            "plty": -10,
+            "mode": 0,
+            "thpr": 0,
+            "shty": 0,
+            "ethi": 0
+        }
+    },
+    {
+        "question": "Modding Space is the future of Starblast",
+        "effect": {
+            "gapl": 0,
+            "plty": 0,
+            "mode": 10,
+            "thpr": 5,
+            "shty": 0,
+            "ethi": 0
+        }
+    },
+    {
+        "question": "I usually go for ships that are reliable in combat",
+        "effect": {
+            "gapl": 10,
+            "plty": 0,
+            "mode": 0,
+            "thpr": -5,
+            "shty": 0,
+            "ethi": 0
+        }
+    },
+    {
+        "question": "I prefer to play modes with no mining involved",
+        "effect": {
+            "gapl": 10,
+            "plty": 0,
+            "mode": 0,
+            "thpr": 0,
+            "shty": 10,
+            "ethi": 0
+        }
+    },
+    {
+        "question": "I usually purchase mining pods",
+        "effect": {
+            "gapl": -10,
+            "plty": 0,
+            "mode": 0,
+            "thpr": -5,
+            "shty": 0,
+            "ethi": 0
+        }
+    },
+    {
+        "question": "Mods should be kept as special events",
+        "effect": {
+            "gapl": 0,
+            "plty": 0,
+            "mode": -10,
+            "thpr": 0,
+            "shty": 0,
+            "ethi": 0
+        }
+    },
+    {
+        "question": "The more mining, the better",
+        "effect": {
+            "gapl": -10,
+            "plty": 0,
+            "mode": 0,
+            "thpr": 0,
+            "shty": -5,
+            "ethi": 0
+        }
+    },
+    {
+        "question": "Vanilla is too simple, mods are superior",
+        "effect": {
+            "gapl": 0,
+            "plty": 0,
+            "mode": 10,
+            "thpr": 0,
+            "shty": 0,
+            "ethi": 0
+        }
+    },
+    {
+        "question": "Unlawful players are just bullies",
+        "effect": {
+            "gapl": 0,
+            "plty": 0,
+            "mode": 0,
+            "thpr": 0,
+            "shty": 0,
+            "ethi": -10
+        }
+    },
+    {
+        "question": "Being able to outrun my opponent is more important than having a bit more firepower",
+        "effect": {
+            "gapl": 0,
+            "plty": 0,
+            "mode": 0,
+            "thpr": -5,
+            "shty": 10,
+            "ethi": 0
+        }
+    },
+    {
+        "question": "I enjoy ending the game quickly",
+        "effect": {
+            "gapl": 5,
+            "plty": 0,
+            "mode": 0,
+            "thpr": 5,
+            "shty": 0,
+            "ethi": 10
+        }
+    },
+    {
+        "question": "I try to team as little as possible in modes like Survival",
+        "effect": {
+            "gapl": 0,
+            "plty": 10,
+            "mode": 0,
+            "thpr": 0,
+            "shty": 0,
+            "ethi": 0
+        }
+    },
+    {
+        "question": "Heavy ships are underrated",
+        "effect": {
+            "gapl": 0,
+            "plty": 0,
+            "mode": 0,
+            "thpr": 0,
+            "shty": -10,
+            "ethi": 0
+        }
+    },
+    {
+        "question": "Fuck teaming - Epik, January 23rd 2017",
+        "effect": {
+            "gapl": 0,
+            "plty": 10,
+            "mode": 0,
+            "thpr": 0,
+            "shty": 0,
+            "ethi": 5
+        }
+    },
+    {
+        "question": "Mining is and should stay as the foundation of the game",
+        "effect": {
+            "gapl": -10,
+            "plty": 0,
+            "mode": -10,
+            "thpr": 0,
+            "shty": 0,
+            "ethi": 0
+        }
+    },
+    {
+        "question": "Survival mode should have teaming",
+        "effect": {
+            "gapl": 0,
+            "plty": -10,
+            "mode": -5,
+            "thpr": 0,
+            "shty": 0,
+            "ethi": 0
+        }
+    },
+    {
+        "question": "Team work makes dream work",
+        "effect": {
+            "gapl": 0,
+            "plty": -10,
+            "mode": 0,
+            "thpr": 0,
+            "shty": 0,
+            "ethi": 0
+        }
+    },
+    {
+        "question": "Getting gems from killing other players is a more effective way to mine",
+        "effect": {
+            "gapl": 10,
+            "plty": 0,
+            "mode": 0,
+            "thpr": 10,
+            "shty": 0,
+            "ethi": 0
+        }
+    },
+    {
+        "question": "I prefer to play a private game with me and my friends",
+        "effect": {
+            "gapl": 0,
+            "plty": 10,
+            "mode": 0,
+            "thpr": 0,
+            "shty": 0,
+            "ethi": 0
+        }
+    },
+    {
+        "question": "I use secondary weapons wisely",
+        "effect": {
+            "gapl": 5,
+            "plty": 0,
+            "mode": 0,
+            "thpr": -10,
+            "shty": 0,
+            "ethi": 0
+        }
+    },
+    {
+        "question": "Teaming is a core aspect of the game",
+        "effect": {
+            "gapl": 0,
+            "plty": -10,
+            "mode": -5,
+            "thpr": 0,
+            "shty": 0,
+            "ethi": 0
+        }
+    },
+    {
+        "question": "I will do anything to win",
+        "effect": {
+            "gapl": 0,
+            "plty": 0,
+            "mode": 0,
+            "thpr": 10,
+            "shty": 0,
+            "ethi": 0
+        }
+    },
+    {
+        "question": "I enjoy the idea of being in command of a team",
+        "effect": {
+            "gapl": 0,
+            "plty": -5,
+            "mode": 0,
+            "thpr": -10,
+            "shty": 0,
+            "ethi": 0
+        }
+    },
+    {
+        "question": "Rushing my opponent is effective",
+        "effect": {
+            "gapl": 5,
+            "plty": 0,
+            "mode": 0,
+            "thpr": 10,
+            "shty": 0,
+            "ethi": 0
+        }
+    },
+    {
+        "question": "The developers should focus on ways to make Starblast different",
+        "effect": {
+            "gapl": 0,
+            "plty": 0,
+            "mode": 10,
+            "thpr": 0,
+            "shty": 0,
+            "ethi": 0
+        }
+    },
+    {
+        "question": "RCS-Off fights are the best",
+        "effect": {
+            "gapl": 5,
+            "plty": 0,
+            "mode": 0,
+            "thpr": 0,
+            "shty": 10,
+            "ethi": 0
+        }
+    },
+    {
+        "question": "Stopping a group of players from killing an entire game is something I do often",
+        "effect": {
+            "gapl": 0,
+            "plty": 10,
+            "mode": 0,
+            "thpr": 5,
+            "shty": 0,
+            "ethi": -10
+        }
+    },
+    {
+        "question": "Vanilla should forever stay as the core of the game",
+        "effect": {
+            "gapl": 0,
+            "plty": 0,
+            "mode": -10,
+            "thpr": 0,
+            "shty": 0,
+            "ethi": 0
+        }
+    },
+    {
+        "question": "Heavy ships are more useful than faster ships",
+        "effect": {
+            "gapl": 0,
+            "plty": 0,
+            "mode": 0,
+            "thpr": -5,
+            "shty": -10,
+            "ethi": 0
+        }
+    },
+    {
+        "question": "There is nothing wrong with trolling players",
+        "effect": {
+            "gapl": 0,
+            "plty": 0,
+            "mode": 0,
+            "thpr": 0,
+            "shty": 0,
+            "ethi": 10
+        }
+    },
+    {
+        "question": "The developers should focus on updating the primary modes",
+        "effect": {
+            "gapl": 0,
+            "plty": 0,
+            "mode": -10,
+            "thpr": 0,
+            "shty": 0,
+            "ethi": 0
+        }
+    },
+    {
+        "question": "Vanilla should include modded ship trees",
+        "effect": {
+            "gapl": 0,
+            "plty": 0,
+            "mode": 10,
+            "thpr": 0,
+            "shty": 0,
+            "ethi": 0
+        }
+    },
+    {
+        "question": "A team will usually fail without heavy ships",
+        "effect": {
+            "gapl": 0,
+            "plty": -5,
+            "mode": 0,
+            "thpr": 0,
+            "shty": -10,
+            "ethi": 0
+        }
+    },
+    {
+        "question": "I enjoy using mobile ships for trolling",
+        "effect": {
+            "gapl": 0,
+            "plty": 5,
+            "mode": 0,
+            "thpr": 0,
+            "shty": 10,
+            "ethi": 10
+        }
+    },
 ];
