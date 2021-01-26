@@ -2,7 +2,7 @@ questions = [
     {
         "question": "I enjoy mining",
         "effect": {
-            "gapl": -10,
+            "gapl": -15,
             "plty": 0,
             "mode": 0,
             "thpr": 0,
@@ -83,9 +83,9 @@ questions = [
             "gapl": 0,
             "plty": 0,
             "mode": 0,
-            "thpr": 0,
+            "thpr": 10,
             "shty": 0,
-            "ethi": 10
+            "ethi": 0
         }
     },
     {
@@ -129,14 +129,14 @@ questions = [
             "mode": 0,
             "thpr": 0,
             "shty": 0,
-            "ethi": 0
+            "ethi": 10
         }
     },
     {
         "question": "In certain occasions, it is acceptable to crossteam in team mode",
         "effect": {
             "gapl": 0,
-            "plty": -5,
+            "plty": -10,
             "mode": 0,
             "thpr": 0,
             "shty": 0,
@@ -149,7 +149,7 @@ questions = [
             "gapl": 0,
             "plty": 10,
             "mode": 0,
-            "thpr": 5,
+            "thpr": 0,
             "shty": 0,
             "ethi": 0
         }
@@ -180,9 +180,9 @@ questions = [
         "question": "Battle Royale is a fun mod",
         "effect": {
             "gapl": 5,
-            "plty": 5,
+            "plty": 10,
             "mode": 5,
-            "thpr": 10,
+            "thpr": 5,
             "shty": 0,
             "ethi": 0
         }
@@ -204,7 +204,7 @@ questions = [
             "gapl": 0,
             "plty": 0,
             "mode": 0,
-            "thpr": 5,
+            "thpr": 0,
             "shty": 10,
             "ethi": 0
         }
@@ -235,7 +235,7 @@ questions = [
         "question": "I usually help new players in game",
         "effect": {
             "gapl": 0,
-            "plty": -5,
+            "plty": 0,
             "mode": 0,
             "thpr": 0,
             "shty": 0,
@@ -248,7 +248,7 @@ questions = [
             "gapl": 10,
             "plty": 0,
             "mode": 0,
-            "thpr": 5,
+            "thpr": 0,
             "shty": 0,
             "ethi": 0
         }
@@ -259,7 +259,7 @@ questions = [
             "gapl": -10,
             "plty": 0,
             "mode": 0,
-            "thpr": 5,
+            "thpr": -5,
             "shty": 0,
             "ethi": 0
         }
@@ -281,7 +281,7 @@ questions = [
             "gapl": 10,
             "plty": 0,
             "mode": 0,
-            "thpr": 10,
+            "thpr": 0,
             "shty": 0,
             "ethi": 10
         }
@@ -292,16 +292,16 @@ questions = [
             "gapl": 0,
             "plty": 10,
             "mode": 0,
-            "thpr": 5,
+            "thpr": 0,
             "shty": 0,
-            "ethi": 5
+            "ethi": 0
         }
     },
     {
         "question": "I usually like the company of other players",
         "effect": {
             "gapl": 0,
-            "plty": -10,
+            "plty": -5,
             "mode": 0,
             "thpr": 0,
             "shty": 0,
@@ -313,7 +313,7 @@ questions = [
         "effect": {
             "gapl": 0,
             "plty": 0,
-            "mode": 0,
+            "mode": 10,
             "thpr": 0,
             "shty": 0,
             "ethi": -5
@@ -344,7 +344,7 @@ questions = [
     {
         "question": "I enjoy playing without a plan, and just play for the intensity",
         "effect": {
-            "gapl": 5,
+            "gapl": 0,
             "plty": 0,
             "mode": 0,
             "thpr": 10,
@@ -355,7 +355,7 @@ questions = [
     {
         "question": "I like to put myself on the front line in battles",
         "effect": {
-            "gapl": 0,
+            "gapl": 10,
             "plty": 0,
             "mode": 0,
             "thpr": 0,
@@ -366,8 +366,8 @@ questions = [
     {
         "question": "Racing is fun",
         "effect": {
-            "gapl": -5,
-            "plty": 5,
+            "gapl": 0,
+            "plty": 10,
             "mode": 5,
             "thpr": 0,
             "shty": 10,
@@ -380,7 +380,7 @@ questions = [
             "gapl": 0,
             "plty": 10,
             "mode": 0,
-            "thpr": 10,
+            "thpr": 5,
             "shty": 0,
             "ethi": 10
         }
@@ -388,10 +388,10 @@ questions = [
     {
         "question": "I sometimes join games just to stop people from trolling",
         "effect": {
-            "gapl": 5,
+            "gapl": 0,
             "plty": 0,
             "mode": 0,
-            "thpr": 5,
+            "thpr": 0,
             "shty": 0,
             "ethi": -10
         }
@@ -410,7 +410,7 @@ questions = [
     {
         "question": "Taunting my opponents is fun",
         "effect": {
-            "gapl": 5,
+            "gapl": 0,
             "plty": 0,
             "mode": 0,
             "thpr": 0,
@@ -433,7 +433,7 @@ questions = [
         "question": "I treat every player with the same respect they give me",
         "effect": {
             "gapl": 0,
-            "plty": -5,
+            "plty": 0,
             "mode": 0,
             "thpr": 0,
             "shty": 0,
@@ -448,7 +448,7 @@ questions = [
             "mode": 0,
             "thpr": 0,
             "shty": 0,
-            "ethi": 0
+            "ethi": -10
         }
     },
     {
@@ -457,7 +457,7 @@ questions = [
             "gapl": 10,
             "plty": 0,
             "mode": 0,
-            "thpr": 5,
+            "thpr": 0,
             "shty": 0,
             "ethi": 0
         }
@@ -490,7 +490,7 @@ questions = [
             "gapl": 0,
             "plty": -5,
             "mode": 0,
-            "thpr": 10,
+            "thpr": -10,
             "shty": 0,
             "ethi": 0
         }
@@ -499,10 +499,10 @@ questions = [
         "question": "Racing should be a core aspect of the game",
         "effect": {
             "gapl": 0,
-            "plty": 0,
+            "plty": 5,
             "mode": 10,
             "thpr": 0,
-            "shty": 10,
+            "shty": 5,
             "ethi": 0
         }
     },
@@ -542,7 +542,7 @@ questions = [
     {
         "question": "I prefer to be the one to act as a barrier",
         "effect": {
-            "gapl": 0,
+            "gapl": -5,
             "plty": 0,
             "mode": 0,
             "thpr": 0,
@@ -558,13 +558,13 @@ questions = [
             "mode": 0,
             "thpr": 0,
             "shty": 0,
-            "ethi": 0
+            "ethi": -5
         }
     },
     {
         "question": "I use fast ships for stealing kills effectively",
         "effect": {
-            "gapl": 5,
+            "gapl": 0,
             "plty": 0,
             "mode": 0,
             "thpr": 0,
@@ -578,7 +578,7 @@ questions = [
             "gapl": 5,
             "plty": 10,
             "mode": 0,
-            "thpr": 5,
+            "thpr": 0,
             "shty": 0,
             "ethi": 0
         }
@@ -696,7 +696,7 @@ questions = [
     {
         "question": "I tend to spam torpedos into groups of players",
         "effect": {
-            "gapl": 10,
+            "gapl": 5,
             "plty": 0,
             "mode": 0,
             "thpr": 10,
@@ -751,7 +751,7 @@ questions = [
     {
         "question": "I only mine to get the ship and secondary weapons I want",
         "effect": {
-            "gapl": 10,
+            "gapl": 5,
             "plty": 0,
             "mode": 0,
             "thpr": 5,
@@ -806,7 +806,7 @@ questions = [
     {
         "question": "I usually wait for my opponent to come at me first",
         "effect": {
-            "gapl": 5,
+            "gapl": 0,
             "plty": 0,
             "mode": 0,
             "thpr": -10,
@@ -828,7 +828,7 @@ questions = [
     {
         "question": "Ramming enemies is fun",
         "effect": {
-            "gapl": 5,
+            "gapl": 0,
             "plty": 0,
             "mode": 0,
             "thpr": 10,
@@ -974,7 +974,7 @@ questions = [
             "gapl": 10,
             "plty": 0,
             "mode": 0,
-            "thpr": -5,
+            "thpr": -10,
             "shty": 0,
             "ethi": 0
         }
@@ -996,7 +996,7 @@ questions = [
             "gapl": -10,
             "plty": 0,
             "mode": 0,
-            "thpr": -5,
+            "thpr": -10,
             "shty": 0,
             "ethi": 0
         }
@@ -1013,9 +1013,20 @@ questions = [
         }
     },
     {
+        "question": "I usually get best Killer",
+        "effect": {
+            "gapl": 10,
+            "plty": 0,
+            "mode": 0,
+            "thpr": 0,
+            "shty": 0,
+            "ethi": 0
+        }
+    },
+    {
         "question": "The more mining, the better",
         "effect": {
-            "gapl": -10,
+            "gapl": -15,
             "plty": 0,
             "mode": 0,
             "thpr": 0,
@@ -1042,7 +1053,7 @@ questions = [
             "mode": 0,
             "thpr": 0,
             "shty": 0,
-            "ethi": -10
+            "ethi": -15
         }
     },
     {
@@ -1059,7 +1070,7 @@ questions = [
     {
         "question": "I enjoy ending the game quickly",
         "effect": {
-            "gapl": 5,
+            "gapl": 0,
             "plty": 0,
             "mode": 0,
             "thpr": 5,
@@ -1101,6 +1112,17 @@ questions = [
         }
     },
     {
+        "question": "I usually get best Healer",
+        "effect": {
+            "gapl": 0,
+            "plty": 0,
+            "mode": 0,
+            "thpr": 0,
+            "shty": 0,
+            "ethi": -5
+        }
+    },
+    {
         "question": "Mining is and should stay as the foundation of the game",
         "effect": {
             "gapl": -10,
@@ -1139,7 +1161,7 @@ questions = [
             "gapl": 10,
             "plty": 0,
             "mode": 0,
-            "thpr": 10,
+            "thpr": 5,
             "shty": 0,
             "ethi": 0
         }
@@ -1202,7 +1224,7 @@ questions = [
     {
         "question": "Rushing my opponent is effective",
         "effect": {
-            "gapl": 5,
+            "gapl": 0,
             "plty": 0,
             "mode": 0,
             "thpr": 10,
@@ -1273,7 +1295,7 @@ questions = [
             "mode": 0,
             "thpr": 0,
             "shty": 0,
-            "ethi": 10
+            "ethi": 15
         }
     },
     {
@@ -1318,6 +1340,61 @@ questions = [
             "thpr": 0,
             "shty": 10,
             "ethi": 10
+        }
+    },
+    {
+        "question": "The Rock-Tower path coming from Howler is stronger than most think",
+        "effect": {
+            "gapl": -10,
+            "plty": 0,
+            "mode": 0,
+            "thpr": -10,
+            "shty": -10,
+            "ethi": 0
+        }
+    },
+    {
+        "question": "I prefer to use the heavy Tier 7s rather than the lighter ones",
+        "effect": {
+            "gapl": -10,
+            "plty": 0,
+            "mode": 0,
+            "thpr": 0,
+            "shty": -10,
+            "ethi": 0
+        }
+    },
+    {
+        "question": "I dislike base campers",
+        "effect": {
+            "gapl": 0,
+            "plty": 0,
+            "mode": 0,
+            "thpr": 0,
+            "shty": 0,
+            "ethi": -10
+        }
+    },
+    {
+        "question": "I usually get best Contributor",
+        "effect": {
+            "gapl": -15,
+            "plty": 0,
+            "mode": 0,
+            "thpr": 0,
+            "shty": 0,
+            "ethi": 0
+        }
+    },
+    {
+        "question": "The amount you mine primarily dictates how well you will do in a game",
+        "effect": {
+            "gapl": -10,
+            "plty": 0,
+            "mode": 0,
+            "thpr": -5,
+            "shty": 0,
+            "ethi": 0
         }
     },
 ];
