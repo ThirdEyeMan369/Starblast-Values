@@ -59,7 +59,7 @@ questions = [
         "question": "I would like to see more to Modding Space",
         "effect": {
             "gapl": 0,
-            "plty": 10,
+            "plty": 0,
             "mode": 10,
             "thpr": 0,
             "shty": 0,
