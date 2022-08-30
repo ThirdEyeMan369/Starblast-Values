@@ -13,7 +13,7 @@ questions = [
     {
         "question": "I usually get the most kills",
         "effect": {
-            "gapl": 10,
+            "gapl": 25,
             "plty": 0,
             "mode": 0,
             "thpr": 0,
@@ -37,7 +37,7 @@ questions = [
         "question": "I prefer to play modes that does not require teaming",
         "effect": {
             "gapl": 0,
-            "plty": 10,
+            "plty": 20,
             "mode": 0,
             "thpr": 0,
             "shty": 0,
@@ -49,7 +49,7 @@ questions = [
         "effect": {
             "gapl": 0,
             "plty": 0,
-            "mode": -10,
+            "mode": -20,
             "thpr": 0,
             "shty": 0,
             "ethi": 0
@@ -83,7 +83,7 @@ questions = [
             "gapl": 0,
             "plty": 0,
             "mode": 0,
-            "thpr": 10,
+            "thpr": 20,
             "shty": 0,
             "ethi": 0
         }
@@ -118,7 +118,7 @@ questions = [
             "mode": 0,
             "thpr": 0,
             "shty": 0,
-            "ethi": -10
+            "ethi": -15
         }
     },
     {
@@ -129,25 +129,25 @@ questions = [
             "mode": 0,
             "thpr": 0,
             "shty": 0,
-            "ethi": 10
+            "ethi": 15
         }
     },
     {
         "question": "In certain occasions, it is acceptable to crossteam in team mode",
         "effect": {
             "gapl": 0,
-            "plty": -10,
+            "plty": 0,
             "mode": 0,
-            "thpr": 0,
+            "thpr": -5,
             "shty": 0,
-            "ethi": 10
+            "ethi": 30
         }
     },
     {
         "question": "I usually go off to do my own thing instead of sticking with the team",
         "effect": {
             "gapl": 0,
-            "plty": 10,
+            "plty": 15,
             "mode": 0,
             "thpr": 0,
             "shty": 0,
@@ -155,11 +155,11 @@ questions = [
         }
     },
     {
-        "question": "The vanilla ship tree should be updated more often",
+        "question": "The vanilla ship tree is preferable",
         "effect": {
             "gapl": 0,
             "plty": 0,
-            "mode": -10,
+            "mode": -15,
             "thpr": 0,
             "shty": 0,
             "ethi": 0
@@ -205,7 +205,7 @@ questions = [
             "plty": 0,
             "mode": 0,
             "thpr": 0,
-            "shty": 10,
+            "shty": 20,
             "ethi": 0
         }
     },
@@ -216,7 +216,7 @@ questions = [
             "plty": 0,
             "mode": 0,
             "thpr": 0,
-            "shty": -10,
+            "shty": -15,
             "ethi": 0
         }
     },
@@ -228,7 +228,7 @@ questions = [
             "mode": 0,
             "thpr": 0,
             "shty": 0,
-            "ethi": 10
+            "ethi": 15
         }
     },
     {
@@ -239,13 +239,13 @@ questions = [
             "mode": 0,
             "thpr": 0,
             "shty": 0,
-            "ethi": -10
+            "ethi": -20
         }
     },
     {
         "question": "Fuck mining - Uranus is big, July 12th 2018",
         "effect": {
-            "gapl": 10,
+            "gapl": 20,
             "plty": 0,
             "mode": 0,
             "thpr": 0,
@@ -256,7 +256,7 @@ questions = [
     {
         "question": "Powermining is something I do often",
         "effect": {
-            "gapl": -10,
+            "gapl": -5,
             "plty": 0,
             "mode": 0,
             "thpr": -5,
@@ -278,7 +278,7 @@ questions = [
     {
         "question": "No matter what the cause is, I must get as many kills as possible",
         "effect": {
-            "gapl": 10,
+            "gapl": 30,
             "plty": 0,
             "mode": 0,
             "thpr": 0,
@@ -287,10 +287,10 @@ questions = [
         }
     },
     {
-        "question": "My teamates should leave me alone",
+        "question": "My teammates should leave me alone",
         "effect": {
             "gapl": 0,
-            "plty": 10,
+            "plty": 15,
             "mode": 0,
             "thpr": 0,
             "shty": 0,
@@ -301,7 +301,7 @@ questions = [
         "question": "I usually like the company of other players",
         "effect": {
             "gapl": 0,
-            "plty": -5,
+            "plty": -10,
             "mode": 0,
             "thpr": 0,
             "shty": 0,
@@ -313,7 +313,7 @@ questions = [
         "effect": {
             "gapl": 0,
             "plty": 0,
-            "mode": 10,
+            "mode": 20,
             "thpr": 0,
             "shty": 0,
             "ethi": -5
@@ -347,7 +347,7 @@ questions = [
             "gapl": 0,
             "plty": 0,
             "mode": 0,
-            "thpr": 10,
+            "thpr": 20,
             "shty": 0,
             "ethi": 0
         }
@@ -358,7 +358,7 @@ questions = [
             "gapl": 10,
             "plty": 0,
             "mode": 0,
-            "thpr": 0,
+            "thpr": 5,
             "shty": -10,
             "ethi": 0
         }
@@ -393,7 +393,7 @@ questions = [
             "mode": 0,
             "thpr": 0,
             "shty": 0,
-            "ethi": -10
+            "ethi": -15
         }
     },
     {
@@ -423,7 +423,7 @@ questions = [
         "effect": {
             "gapl": 0,
             "plty": 0,
-            "mode": 10,
+            "mode": 15,
             "thpr": 0,
             "shty": 0,
             "ethi": 0
@@ -448,13 +448,13 @@ questions = [
             "mode": 0,
             "thpr": 0,
             "shty": 0,
-            "ethi": -10
+            "ethi": 0
         }
     },
     {
         "question": "I enjoy dueling other players",
         "effect": {
-            "gapl": 10,
+            "gapl": 15,
             "plty": 0,
             "mode": 0,
             "thpr": 0,
@@ -474,7 +474,7 @@ questions = [
         }
     },
     {
-        "question": "Invasion should be a solo mode",
+        "question": "I would like a solo mode for Invasion",
         "effect": {
             "gapl": 0,
             "plty": 10,
@@ -485,12 +485,12 @@ questions = [
         }
     },
     {
-        "question": "I always coordinate with my team mates",
+        "question": "I always coordinate with my teammates",
         "effect": {
             "gapl": 0,
             "plty": -5,
             "mode": 0,
-            "thpr": -10,
+            "thpr": -15,
             "shty": 0,
             "ethi": 0
         }
@@ -523,7 +523,7 @@ questions = [
             "gapl": 5,
             "plty": 0,
             "mode": 0,
-            "thpr": 10,
+            "thpr": 30,
             "shty": 0,
             "ethi": 0
         }
@@ -531,9 +531,9 @@ questions = [
     {
         "question": "There should be more to mining",
         "effect": {
-            "gapl": -10,
+            "gapl": -5,
             "plty": 0,
-            "mode": 5,
+            "mode": 10,
             "thpr": 0,
             "shty": 0,
             "ethi": 0
@@ -546,12 +546,12 @@ questions = [
             "plty": 0,
             "mode": 0,
             "thpr": 0,
-            "shty": 10,
+            "shty": -10,
             "ethi": 0
         }
     },
     {
-        "question": "I always team with my friends",
+        "question": "I always team with my friends or clan",
         "effect": {
             "gapl": 0,
             "plty": -10,
@@ -567,16 +567,16 @@ questions = [
             "gapl": 0,
             "plty": 0,
             "mode": 0,
-            "thpr": 0,
-            "shty": 10,
+            "thpr": 5,
+            "shty": 15,
             "ethi": 10
         }
     },
     {
         "question": "One on one dueling is more enjoyable",
         "effect": {
-            "gapl": 5,
-            "plty": 10,
+            "gapl": 10,
+            "plty": 20,
             "mode": 0,
             "thpr": 0,
             "shty": 0,
@@ -597,7 +597,7 @@ questions = [
     {
         "question": "In team games, I heal all my team mates",
         "effect": {
-            "gapl": 0,
+            "gapl": -10,
             "plty": -5,
             "mode": 0,
             "thpr": 0,
@@ -611,7 +611,7 @@ questions = [
             "gapl": 10,
             "plty": 0,
             "mode": 0,
-            "thpr": 10,
+            "thpr": 20,
             "shty": 0,
             "ethi": 10
         }
@@ -620,7 +620,7 @@ questions = [
         "question": "You can not win with ease without coordination",
         "effect": {
             "gapl": 0,
-            "plty": -5,
+            "plty": -15,
             "mode": 0,
             "thpr": -10,
             "shty": 0,
@@ -632,7 +632,7 @@ questions = [
         "effect": {
             "gapl": 0,
             "plty": 0,
-            "mode": 10,
+            "mode": 15,
             "thpr": 0,
             "shty": 0,
             "ethi": 0
@@ -643,7 +643,7 @@ questions = [
         "effect": {
             "gapl": 0,
             "plty": 0,
-            "mode": -10,
+            "mode": -5,
             "thpr": 0,
             "shty": 0,
             "ethi": 0
@@ -657,7 +657,7 @@ questions = [
             "mode": 0,
             "thpr": 0,
             "shty": 0,
-            "ethi": 10
+            "ethi": 50
         }
     },
     {
@@ -686,7 +686,7 @@ questions = [
         "question": "I would want a single player mode",
         "effect": {
             "gapl": 0,
-            "plty": 10,
+            "plty": 20,
             "mode": -5,
             "thpr": 0,
             "shty": 0,
@@ -707,19 +707,19 @@ questions = [
     {
         "question": "I always use the current strongest ship",
         "effect": {
-            "gapl": 5,
+            "gapl": 0,
             "plty": 0,
             "mode": 0,
-            "thpr": 10,
+            "thpr": 0,
             "shty": 0,
-            "ethi": 10
+            "ethi": 20
         }
     },
     {
         "question": "I enjoy playing large team events like ACW/AOW",
         "effect": {
             "gapl": 0,
-            "plty": -10,
+            "plty": -20,
             "mode": 0,
             "thpr": 0,
             "shty": 0,
@@ -740,7 +740,7 @@ questions = [
     {
         "question": "The foundation of the game should rely less on mining",
         "effect": {
-            "gapl": 10,
+            "gapl": 15,
             "plty": 0,
             "mode": 5,
             "thpr": 0,
@@ -776,7 +776,7 @@ questions = [
             "gapl": -10,
             "plty": 0,
             "mode": 0,
-            "thpr": -5,
+            "thpr": -10,
             "shty": 0,
             "ethi": 0
         }
@@ -820,7 +820,7 @@ questions = [
             "gapl": 0,
             "plty": 0,
             "mode": 0,
-            "thpr": -10,
+            "thpr": -20,
             "shty": 0,
             "ethi": 0
         }
@@ -832,7 +832,7 @@ questions = [
             "plty": 0,
             "mode": 0,
             "thpr": 10,
-            "shty": -10,
+            "shty": 0,
             "ethi": 0
         }
     },
@@ -881,7 +881,7 @@ questions = [
         }
     },
     {
-        "question": "The faster, the better",
+        "question": "The faster the ship, the better",
         "effect": {
             "gapl": 0,
             "plty": 0,
@@ -908,9 +908,9 @@ questions = [
             "gapl": 0,
             "plty": 0,
             "mode": 0,
-            "thpr": 10,
+            "thpr": 0,
             "shty": 0,
-            "ethi": 10
+            "ethi": 20
         }
     },
     {
@@ -950,7 +950,7 @@ questions = [
         "question": "The ability to team with my friends is what makes me play Starblast",
         "effect": {
             "gapl": 0,
-            "plty": -10,
+            "plty": -15,
             "mode": 0,
             "thpr": 0,
             "shty": 0,
@@ -962,7 +962,7 @@ questions = [
         "effect": {
             "gapl": 0,
             "plty": 0,
-            "mode": 10,
+            "mode": 30,
             "thpr": 5,
             "shty": 0,
             "ethi": 0
@@ -982,18 +982,18 @@ questions = [
     {
         "question": "I prefer to play modes with no mining involved",
         "effect": {
-            "gapl": 10,
+            "gapl": 20,
             "plty": 0,
             "mode": 0,
             "thpr": 0,
-            "shty": 10,
+            "shty": 5,
             "ethi": 0
         }
     },
     {
         "question": "I usually purchase mining pods",
         "effect": {
-            "gapl": -10,
+            "gapl": -20,
             "plty": 0,
             "mode": 0,
             "thpr": -10,
@@ -1015,7 +1015,7 @@ questions = [
     {
         "question": "I usually get best Killer",
         "effect": {
-            "gapl": 10,
+            "gapl": 15,
             "plty": 0,
             "mode": 0,
             "thpr": 0,
@@ -1104,28 +1104,28 @@ questions = [
         "question": "Fuck teaming - Epik, January 23rd 2017",
         "effect": {
             "gapl": 0,
-            "plty": 10,
+            "plty": 15,
             "mode": 0,
             "thpr": 0,
             "shty": 0,
-            "ethi": 5
+            "ethi": 0
         }
     },
     {
         "question": "I usually get best Healer",
         "effect": {
-            "gapl": 0,
+            "gapl": -20,
             "plty": 0,
             "mode": 0,
             "thpr": 0,
             "shty": 0,
-            "ethi": -5
+            "ethi": -10
         }
     },
     {
         "question": "Mining is and should stay as the foundation of the game",
         "effect": {
-            "gapl": -10,
+            "gapl": -15,
             "plty": 0,
             "mode": -10,
             "thpr": 0,
@@ -1137,7 +1137,7 @@ questions = [
         "question": "Survival mode should have teaming",
         "effect": {
             "gapl": 0,
-            "plty": -10,
+            "plty": -5,
             "mode": -5,
             "thpr": 0,
             "shty": 0,
@@ -1145,7 +1145,7 @@ questions = [
         }
     },
     {
-        "question": "Team work makes dream work",
+        "question": "Team work makes the dream work",
         "effect": {
             "gapl": 0,
             "plty": -10,
@@ -1192,7 +1192,7 @@ questions = [
         "question": "Teaming is a core aspect of the game",
         "effect": {
             "gapl": 0,
-            "plty": -10,
+            "plty": -15,
             "mode": -5,
             "thpr": 0,
             "shty": 0,
@@ -1216,7 +1216,7 @@ questions = [
             "gapl": 0,
             "plty": -5,
             "mode": 0,
-            "thpr": -10,
+            "thpr": -15,
             "shty": 0,
             "ethi": 0
         }
@@ -1227,7 +1227,7 @@ questions = [
             "gapl": 0,
             "plty": 0,
             "mode": 0,
-            "thpr": 10,
+            "thpr": 20,
             "shty": 0,
             "ethi": 0
         }
@@ -1262,7 +1262,7 @@ questions = [
             "mode": 0,
             "thpr": 5,
             "shty": 0,
-            "ethi": -10
+            "ethi": -20
         }
     },
     {
@@ -1283,19 +1283,19 @@ questions = [
             "plty": 0,
             "mode": 0,
             "thpr": -5,
-            "shty": -10,
+            "shty": -5,
             "ethi": 0
         }
     },
     {
-        "question": "There is nothing wrong with trolling players",
+        "question": "There is nothing wrong with trolling",
         "effect": {
             "gapl": 0,
             "plty": 0,
             "mode": 0,
             "thpr": 0,
             "shty": 0,
-            "ethi": 15
+            "ethi": 25
         }
     },
     {
@@ -1303,7 +1303,7 @@ questions = [
         "effect": {
             "gapl": 0,
             "plty": 0,
-            "mode": -10,
+            "mode": -20,
             "thpr": 0,
             "shty": 0,
             "ethi": 0
